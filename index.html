@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title>TableSorter Demo</title>
+<!-- link to css file -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Jquery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Jquery tablesorter library -->
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
+<script>
+	$(function() {
+		$("#demoTable").tablesorter();
+	});
+</script>
+</head>
+<body>
+	<table id="demoTable">
+		<thead>
+			<tr>
+				<th class="sortUpImg">Name</th>
+				<th class="sortUpImg">Age</th>
+			</tr>
+		</thead>
+		<tbody id="rows">
+		</tbody>
+	</table>
+</body>
+</html>
